@@ -1,11 +1,14 @@
 {
-  "name": "simplefolio",
+  "homepage": "http://Loochnick.github.io/portfolio",
+  "name": "portfolio",
   "version": "1.0.1",
   "private": "true",
-  "description": "A clean, beautiful and responsive portfolio template for Developers!",
+  "description": "portfolio",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "parcel build",
     "gh-pages-build": "parcel build --public-url ."
   },
@@ -19,8 +22,7 @@
   "bugs": {
     "url": "https://github.com/cobidev/simplefolio/issues"
   },
-  "homepage": "https://github.com/cobidev/simplefolio#readme",
-  "devDependencies": {
+    "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0",
     "prettier": "^2.7.1"
